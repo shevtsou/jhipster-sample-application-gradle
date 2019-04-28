@@ -1,0 +1,11 @@
+version: '2'
+services:
+    jhipstersampleapplicationgradle-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/jhipsterSampleApplicationGradle/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=jhipsterSampleApplicationGradle
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
